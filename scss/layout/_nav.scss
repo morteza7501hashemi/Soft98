@@ -1,0 +1,127 @@
+.nav {
+    max-width: 180rem;
+    background: $color-gray-light;
+    margin: 0 auto;
+    padding: .9rem 4rem;
+
+    @media only screen and (max-width:1300px) {
+        padding: .9rem;
+    }
+
+    @include respond(xxxl) {
+        padding: .9rem 5rem .9rem 4rem;
+    }
+
+    &__menu {
+        width: auto !important;
+        background: $color-gray-light;
+
+        @include respond(xl) {
+            min-width: 30% !important;
+            margin-top: 5rem;
+        }
+
+        @include respond(lg) {
+            min-width: 40% !important;
+        }
+
+        @include respond(md) {
+            min-width: 45% !important;
+        }
+
+        @include respond(sm) {
+            min-width: 60% !important;
+        }
+        
+        &--icon {
+            width: 3rem;
+            height: 2rem;
+            fill: $color-gray;
+        }
+    }
+
+    &__list {
+        gap: 2px;
+    }
+
+    &__item {
+        width: max-content;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            background: $color-secondary;
+        }
+    }
+
+    &__item:hover &__link {
+        color: #fff;
+    }
+
+    &__item:hover .hover-menu {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    &__link {
+        color: $color-gray;
+        font-weight: 400;
+        transition: all .1s;
+    }
+
+    &__icon-arrowdown {
+        fill: $color-secondary;
+        width: 1.25rem;
+        height: 1.25rem;
+        bottom: -24%;
+        right: 50%;
+        z-index: 50;
+    }
+
+    &__list-icons {
+        gap: 2rem;
+        
+        &--item {
+            cursor: pointer;
+        }
+
+        &--item:hover &--icon-inbox {
+            fill: #fff;
+        }
+
+        &--item:not(:hover) &--icon-question {
+            animation: wink 1s linear infinite;
+        }
+
+        &--icon {
+            fill: $color-gray;
+            width: 2.5rem;
+            height: 2.5rem;
+    
+            &-notifications {
+                &:hover {
+                    animation: notifications 1s 3 forwards;
+                }
+            }
+
+            &-question {
+                width: 1.75rem;
+                height: 1.75rem;
+                fill: $color-tertiary;
+                bottom: -45%;
+                left: -45%;
+            }
+        }
+    }
+
+    &__btn {
+        color: $color-gray !important;
+        font-family: "Iransans";
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+.offcanvas-backdrop {
+    top: 5rem !important;
+}

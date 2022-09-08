@@ -1,0 +1,39 @@
+.search {
+    width: 50rem;
+    background: $color-gray-light;
+    padding: 1rem .5rem;
+    position: fixed;
+    top: .5rem;
+    left: 7.2rem;
+    z-index: 2000;
+
+    @include respond(xxl) {
+        top: .4rem;
+        left: 7.2rem;    
+    }
+
+    @include respond(xl) {
+        top: -.4rem;
+        left: 4.2rem;   
+    }
+
+    @include respond(md) {
+        width: 35rem;
+    }
+
+    @include respond(sm) {
+        width: 25rem;
+    }
+
+    &__input {
+        color: $color-gray;
+        font-family: "Iransans";
+        font-size: 1.6rem;
+        border-color: $color-primary;
+
+        &::placeholder {
+            color: $color-gray;
+            font-family: "Iransans";
+        }
+    }
+}

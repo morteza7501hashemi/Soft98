@@ -1,10 +1,10 @@
 *,
 *::before,
 *::after {
-    text-decoration: none;
-    outline: none;
+    text-decoration: none !important;
+    outline: none !important;
     list-style: none;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 html {
@@ -15,14 +15,5 @@ html {
 body {
     color: $color-gray;
     font: 300 1.6rem/1.7 "Iransans" , sans-serif;
-    background: #fff;
-}
-
-@font-face {
-    font-family: "IranSans";
-    src: url("../font/iransans.eot");
-    src: url("../font/iransans.eot?#iefix") format("embedded-opentype"),
-    url("../font/iransans.woff2") format("woff2"),
-    url("../font/iransans.woff") format("woff"),
-    url("../font/iransans.ttf") format("truetype");
+    background: $color-primary;
 }

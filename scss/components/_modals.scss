@@ -1,0 +1,129 @@
+.modal-notifications {
+    &__header {
+        background: $color-tertiary;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 4.5rem;
+        fill: #b7523f;
+        margin-left: .5rem;
+        transform: scaleX(.7) scaleY(1.1);
+    }
+
+    &__paragraph {
+        font-family: "Iransans";
+        font-size: 1.6rem;
+        line-height: 2;
+        font-weight: 400;
+    }
+
+    &__red {
+        color: $color-tertiary;
+        transition: all .1s;
+
+        &:hover {
+            color: darken($color-tertiary,15%);
+        }
+    }
+
+    &__blue {
+        color: $color-primary;
+        transition: all .1s;
+
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+
+    &__footer {
+        background: $color-gray-light;
+    }
+
+    &__btn {
+        font-family: "Iransans";
+        font-size: 1.6rem;
+    }
+}
+
+.modal-login {
+    margin-top: 1rem;
+
+    &__header {
+        background: $color-primary;
+        padding: 1rem 2rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 4.5rem;
+        fill: #446481;
+        margin-left: 1rem;
+        transform: scaleX(.7) scaleY(1.1);
+    }
+
+    &__body {
+        padding: 1.5rem 8.5rem 4rem;
+
+        @include respond(sm) {
+            padding: 4rem;
+            padding-top: 1.5rem;
+        }
+    }
+
+    &__form {
+        font-weight: 500;
+
+        &--icon-box {
+            padding: 1.2rem;
+        }
+
+        &--icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: $color-gray;
+        }
+    }
+
+    &__input {
+        color: $color-gray;
+        font-family: "Iransans";
+        font-size: 1.6rem;
+
+        &::placeholder {
+            color: $color-gray;
+            font-family: "Iransans";
+        }
+    }
+
+    &__link {
+        color: $color-primary;
+        transition: all .1s;
+
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+
+    &__btn {
+        color: #fff;
+        font-family: "Iransans";
+        font-size: 1.6rem;
+        background: $color-secondary;
+        padding: .8rem 1.2rem;
+        border: none;
+        transition: all .3s;
+
+        &:hover {
+            background: darken($color-secondary,9%);
+        }
+    }
+}
