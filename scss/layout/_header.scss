@@ -1,0 +1,5 @@
+.header {
+    @include max-width;
+    margin-top: 6rem;
+    padding: 2rem 4rem;
+}
