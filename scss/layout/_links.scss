@@ -1,11 +1,4 @@
 .links {
-    @include max-width;
-    padding: 0 4rem;
-
-    @include respond(sm){
-        padding: 0;
-    }
-
     &__tab {
         padding: 1rem 1.3rem;
         border: 1px solid transparent;
@@ -78,6 +71,7 @@
         background: $color-gray-light;
         padding: 1rem 0;
         border: solid 1px #cfcfcf;
+        border-bottom: none;
         overflow: hidden;
     }
 

@@ -1,5 +1,4 @@
 .nav {
-    @include max-width;
     background: $color-gray-light;
     padding: .9rem 4rem;
 
@@ -79,6 +78,10 @@
 
     &__list-icons {
         gap: 2rem;
+
+        @include respond(xxxl) {
+            margin-right: 12rem;
+        }
         
         &--item {
             cursor: pointer;

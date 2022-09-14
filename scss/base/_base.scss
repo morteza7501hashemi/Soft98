@@ -13,7 +13,15 @@ html {
 }
 
 body {
+    @include max-width;
     color: $color-gray;
     font: 300 1.6rem/1.7 "Iransans" , sans-serif;
     background: $color-primary;
+    padding: 0 3rem;
+    padding-top: 6rem;
+
+    @include respond(sm){
+        padding: 0;
+        padding-top: 6rem;
+    }
 }
