@@ -20,6 +20,11 @@ body {
     padding: 0 3rem;
     padding-top: 6rem;
 
+    @include respond(lg){
+        padding: 12rem;
+        padding-top: 6rem;
+    }
+
     @include respond(sm){
         padding: 0;
         padding-top: 6rem;

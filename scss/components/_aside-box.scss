@@ -1,0 +1,196 @@
+.aside-box {
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    position: relative;
+
+    &:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+    &:not(:last-child) {
+        &::after {
+            width: 100%;
+            height: 1px;
+            content: "";
+            background: #d0d0d0;
+            position: absolute;
+            bottom: -1.7rem;
+        }
+    }
+
+    &__header {
+        background: #f7f7f7;
+        padding: 1.15rem 1.5rem;
+        border-bottom: 2px solid $color-secondary;
+    }
+
+    &__heading {
+        color: $color-secondary;
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+    }
+
+    &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: #d8d8d8;
+        transform: scaleX(.5);
+    }
+
+    &__body {
+        padding: 1.15rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__img {
+        border: 1px solid #c2c2c2;
+        border-radius: 4px;
+    }
+
+    &__list {
+        width: 100%;
+    }
+
+    &__item {
+        background: linear-gradient(to left,
+            #f6f6f6 50%,
+            transparent 50%);
+        background-size: 220%;
+        transition: background-position .6s;
+
+        &:hover {
+            background-position: 100%;
+        }
+
+        &:active {
+            background: #70a740;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        &--img-box {
+            background: #fff;
+            padding: .2rem;
+            border: 1px solid #dfdfdf;
+            border-radius: 4px;
+            position: absolute;
+            top: 1rem;
+        }
+
+        &--img {
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        &--title {
+            color: #000;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-right: 5rem;
+        }
+
+        &--date {
+            color: #a8a8a8;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-right: 5rem;
+        }
+    }
+
+    &__item:active &__item--title,
+    &__item:active &__item--date,
+    &__item:active &__item--img-box {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    &__link {
+        line-height: 1.6;
+        padding: .5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0 5rem;
+        position: relative;
+    }
+
+    &__continue {
+        background: linear-gradient(135deg,
+            #c9c9c9,
+            #c9c9c9);
+        padding: 1.75rem 2rem;
+
+        &--btn {
+            color: $color-gray;
+            font-size: 1.6rem;
+            font-weight: 400;
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        &--icon {
+            width: 1.75rem;
+            height: 1.75rem;
+            fill: currentColor;
+        }
+    }
+
+    &__img-box {
+        width: 80%;
+        border: 1px solid #999999;
+        position: relative;
+
+        &:not(:last-child) {
+            &::after {
+                width: 125%;
+                height: 1px;
+                content: "";
+                background: #dcdcdc;
+                cursor: default;
+                position: absolute;
+                bottom: -1.7rem;
+                right: -12.5%;
+            }
+        }
+    }
+
+    &__img-box:hover &__txt-box &__txt &__btn {
+        color: #fff;
+        background: #de3a3a;
+    }
+
+    &__txt-box {
+        background: #f4ebf9;
+        padding: .6rem;
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__txt {
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        word-spacing: -2px;
+    }
+
+    &__btn {
+        color: #e16a5b;
+        font-size: 1.4rem;
+        font-weight: 400;
+        background: #fff;
+        padding: 2px 4px;
+        border: 1px solid #861a1a;
+        border-radius: 7px;
+    }
+}
