@@ -2,6 +2,24 @@
     background: #dadada;
     padding: 1.5rem;
     border: 1px solid #ababab;
+    border-bottom: none;
+
+    @include respond(sm){
+        padding: 1.5rem 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    &__container {
+        background: #fff;
+        padding: 1.5rem 2rem;
+        border-radius: 4px;
+        box-shadow: 0 1rem 1rem rgba(#000 , .1);
+
+        @include respond(sm){
+            border-radius: 0;
+        }
+    }
 
     &__box {
         &:hover &--txt {

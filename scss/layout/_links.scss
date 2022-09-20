@@ -15,6 +15,10 @@
             border-left-color: #cfcfcf;
             border-top-right-radius: 4px;
             cursor: pointer;
+
+            @include respond(sm){
+                border-radius: 0;
+            }
         }
 
         &-2 {
@@ -36,7 +40,7 @@
             align-items: center;
 
             @include respond(md) {
-                border-top-left-radius: 0;
+                border-radius: 0;
             }
         }
 
@@ -73,6 +77,11 @@
         border: solid 1px #cfcfcf;
         border-bottom: none;
         overflow: hidden;
+
+        @include respond(sm){
+            border: none;
+            border-bottom: solid 1px #cfcfcf;
+        }
     }
 
     &__item {

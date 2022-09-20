@@ -10,6 +10,16 @@
         padding: .9rem 5rem .9rem 4rem;
     }
 
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(xxxl) {
+            justify-content: center;
+        }
+    }
+
     &__menu {
         width: auto !important;
         background: $color-gray-light;

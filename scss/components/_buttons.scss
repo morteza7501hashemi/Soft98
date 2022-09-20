@@ -1,0 +1,15 @@
+.btn {
+    color: #fff !important;
+    padding: .7rem 1.2rem !important;
+    border: 1px solid !important;
+    border-radius: 4px !important;
+    transition: all .2s ease-in-out !important;
+
+    &-green {
+        background: $color-secondary !important;
+
+        &:hover {
+            background: $color-secondary-dark !important;
+        }
+    }
+}

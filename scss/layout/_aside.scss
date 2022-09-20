@@ -1,0 +1,11 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+
+    @include respond(lg) {
+        margin-top: 3.4rem;
+        order: 2;
+    }
+}
