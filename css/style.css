@@ -451,6 +451,66 @@ body {
   background: #639438;
 }
 
+.pagination {
+  text-align: center;
+  background: #f7f7f7 !important;
+  margin-top: 3rem;
+  padding: 3rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+.pagination__container {
+  margin: 0 auto;
+  display: flex;
+}
+.pagination__item {
+  min-width: max-content;
+  color: #437593;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background: #fff;
+  padding: 1.15rem 2rem;
+  border: 1px solid #dbdbdb;
+  transition: all 0.2s;
+}
+.pagination__item:hover {
+  color: #d95f47;
+  background: #f5f5f5;
+}
+.pagination__item:not(:last-child) {
+  border-left: none;
+}
+.pagination__item:first-child {
+  color: #5c5c5c;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: default;
+}
+.pagination__item:first-child:hover {
+  color: currentColor;
+  background: #fff;
+}
+.pagination__item:nth-child(2) {
+  color: #fff;
+  background: #79b545;
+  cursor: auto;
+}
+.pagination__item:nth-child(2):hover {
+  color: #fff;
+  background: #79b545;
+}
+.pagination__item:nth-child(8):hover {
+  color: currentColor;
+  background: #fff;
+  cursor: default;
+}
+.pagination__item:last-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
 .programs-box {
   background: #fff;
   border: 1px solid #cfcfcf;
@@ -901,10 +961,12 @@ body {
 
 .main {
   background: #e4e4e4;
+  margin-bottom: 2rem;
   padding: 1.5rem;
   border: 1px solid #ababab;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1) !important;
 }
 @media only screen and (max-width: 575px) {
   .main {
