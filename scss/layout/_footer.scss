@@ -1,0 +1,68 @@
+.footer {
+    width: 100%;
+    text-align: center;
+    background: $color-gray-dark;
+    padding-top: 2.5rem;
+
+    &__paragraph {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+    }
+
+    &__link {
+        color: $color-tertiary;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__developer {
+        width: 60%;
+        color: #fff;
+        background: #d95f47;
+        margin: 0 auto;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 2rem;
+        transition: all .3s;
+
+        @include respond(xl){
+            width: 100%;
+        }
+
+        @include respond(md){
+            flex-flow: column wrap;
+        }
+
+        &:hover {
+            width: 100%;
+            background: linear-gradient(to right,
+            #ff9b31 0,
+            #d95f47 30% 70%,
+            #ff518e 100%) 50% 50%;
+            border-radius: 0;
+        }
+
+        &--link {
+            min-width: max-content;
+            color: #fff;
+            margin: 0 2rem;
+            padding: 1.5rem 0;
+
+            @include respond(md){
+                min-width: auto;
+
+                &:first-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}

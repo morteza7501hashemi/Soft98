@@ -1,3 +1,14 @@
 .header {
+    text-align: right;
     padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    @include respond(xl) {
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }

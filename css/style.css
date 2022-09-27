@@ -53,34 +53,37 @@ html {
 }
 
 body {
-  max-width: 135rem;
-  margin: 0 auto;
   color: #5c5c5c;
   font: 300 1.6rem/1.7 "Iransans", sans-serif;
   background: #437593;
+}
+
+.body {
+  max-width: 135rem;
+  margin: 0 auto;
   padding: 0 3.5rem;
   padding-top: 6rem;
 }
 @media only screen and (max-width: 1199px) {
-  body {
+  .body {
     padding: 0 1.5rem;
     padding-top: 6rem;
   }
 }
 @media only screen and (max-width: 991px) {
-  body {
+  .body {
     padding: 0 9rem;
     padding-top: 6rem;
   }
 }
 @media only screen and (max-width: 767px) {
-  body {
+  .body {
     padding: 0 1.5rem;
     padding-top: 6rem;
   }
 }
 @media only screen and (max-width: 575px) {
-  body {
+  .body {
     padding: 0;
     padding-top: 6rem;
   }
@@ -833,11 +836,86 @@ body {
   }
 }
 
+.footer {
+  width: 100%;
+  text-align: center;
+  background: #323a3f;
+  padding-top: 2.5rem;
+}
+.footer__paragraph {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+.footer__link {
+  color: #d95f47;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__developer {
+  width: 60%;
+  color: #fff;
+  background: #d95f47;
+  margin: 0 auto;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2rem;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 1199px) {
+  .footer__developer {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__developer {
+    flex-flow: column wrap;
+  }
+}
+.footer__developer:hover {
+  width: 100%;
+  background: linear-gradient(to right, #ff9b31 0, #d95f47 30% 70%, #ff518e 100%) 50% 50%;
+  border-radius: 0;
+}
+.footer__developer--link {
+  min-width: max-content;
+  color: #fff;
+  margin: 0 2rem;
+  padding: 1.5rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer__developer--link {
+    min-width: auto;
+  }
+  .footer__developer--link:first-child {
+    padding-bottom: 0;
+  }
+}
+
 .header {
+  text-align: right;
   padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+@media only screen and (max-width: 1199px) {
+  .header {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .links__tab {
+  height: 5rem;
   padding: 1rem 1.3rem;
   border: 1px solid transparent;
   display: flex;
